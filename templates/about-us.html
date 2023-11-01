@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        body {
+            background-color: black !important;
+
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .col {
+            flex: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: rgb(24, 149, 153);">ABOUT US</h1><br>
+    <h3 style="color: rgb(24, 149, 153); font-style: italic; margin-left: 1cm;">
+        “Share the laughter, tears, and applause”</h3><br>
+
+    <div class="row1">
+        <div class="col">
+            <img src="{% static 'theater_innovations.png' %}">
+        </div>
+        <div class="col" style="color: grey;">
+            <h2>THEATER INNOVATIONS</h2><br>
+            <h3>4K Projection:</h3>
+             <p> ESBE Cinemas introduces the latest visual technology, 
+                    offering outstanding picture quality </p>
+             <h3>3D Screen:</h3>
+             <p> Offerings such as the 3D screen with Depth 3D technology,
+                 deliver better luminosity and clarity and vivid picture quality. </p>
+        </div>
+    </div>
+    <br> <br> <br>
+
+    <div class="row1">
+        <div class="col" style="color: rgb(155, 151, 151);">
+            <h2>IMMERSIVE THEATER</h2><br>
+            <h3>Enjoy Plush Comfort and Class:</h3>
+             <p> Contemporary interiors and design aesthetics complement the plush
+                 comfort of seats - making it deeply relaxing movie watching experience.</p>
+             <h3>Experience Seamless Ticketing:</h3>
+             <p> The online ticketing system through the digital platform and paperless transactions, 
+                make bookings a breeze! You can even choose your own seats with a single touch, 
+                without waiting in line. </p>
+        </div>
+        <div class="col" style="margin-left: 7cm;">
+            <img src="{% static 'theater_comfort.png' %}">
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="col">
+            <img src="{% static 'popcorn.jpg' %}" style="margin-top: 2.5cm; margin-left: 2.5cm;" >
+        </div>
+        <div class="col" style="color: grey;">
+            <h2>PICK OF THE PLATTER</h2><br>
+            <p>ESBE Cinemas cares about the diversity in food choice.
+                We serve freshly prepared food and drink with special
+                 new flavours to tickle your taste buds! 
+                 We cater to all preferences, with Vegetarian, Non-Vegetarian labeling </p>
+    </div>
+</body>
+
+</html>
